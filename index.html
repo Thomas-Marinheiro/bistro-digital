@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistrô Digital | Experiência Gastronômica Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Bistrô <span>Digital</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="menu.html">Cardápio</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="cart-icon">
+          <a href="menu.html#carrinho">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Sabor Autêntico & Momentos Inesquecíveis</h1>
+          <p>
+            A verdadeira gastronomia contemporânea, preparada com paixão e
+            servida com excelência.
+          </p>
+          <div class="hero-btns">
+            <a href="menu.html" class="btn btn-primary">Ver Cardápio</a>
+            <a href="menu.html#pedido" class="btn btn-secondary"
+              >Fazer Pedido</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights container">
+        <h2 class="section-title">Destaques da Casa</h2>
+        <div class="grid-highlights">
+          <div class="highlight-item">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Salada Gourmet"
+            />
+            <h3>Salada do Chef</h3>
+            <p>Mix de folhas, queijo brie e mel trufado.</p>
+          </div>
+          <div class="highlight-item">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Filé Mignon"
+            />
+            <h3>Filé au Poivre</h3>
+            <p>Filé mignon ao molho de pimenta com risoto de queijo.</p>
+          </div>
+          <div class="highlight-item">
+            <img
+              src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Sobremesa Chocolate"
+            />
+            <h3>Petit Gâteau</h3>
+            <p>Chocolate belga com sorvete artesanal de baunilha.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="gallery container">
+        <h2 class="section-title">Nossa Galeria</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Drink"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Ambiente"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Prato Gourmet"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Carne"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Frutos do Mar"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Vinho"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato">
+      <div class="footer-content container">
+        <div class="footer-info">
+          <h3>Bistrô Digital</h3>
+          <p>Onde a tradição encontra o paladar contemporâneo.</p>
+          <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Av. Gastronômica, 1000 -
+            Centro
+          </p>
+          <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bistrô Digital. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Fixed Button -->
+    <a href="menu.html" class="mobile-order-btn">
+      <i class="fas fa-utensils"></i> FAZER PEDIDO
+    </a>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

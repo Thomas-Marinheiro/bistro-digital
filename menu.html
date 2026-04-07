@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Digital | Bistrô Digital</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="menu-page">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">Bistrô <span>Digital</span></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="menu.html" class="active">Cardápio</a></li>
+          <li><a href="index.html#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="menu-header">
+        <div class="back-link">
+          <a href="index.html"
+            ><i class="fas fa-arrow-left"></i> Voltar ao Início</a
+          >
+        </div>
+        <h1>Nosso Cardápio</h1>
+        <p>
+          Explore nossa seleção de pratos exclusivos e faça seu pedido para uma
+          experiência inesquecível.
+        </p>
+      </section>
+
+      <div class="menu-categories">
+        <button class="cat-btn active" data-category="todos">Todos</button>
+        <button class="cat-btn" data-category="entradas">Entradas</button>
+        <button class="cat-btn" data-category="principais">Principais</button>
+        <button class="cat-btn" data-category="sobremesas">Sobremesas</button>
+        <button class="cat-btn" data-category="bebidas">Bebidas</button>
+      </div>
+
+      <div id="menu-grid" class="menu-grid">
+        <!-- Items populated by JavaScript -->
+      </div>
+
+      <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+          <h2>Seu Pedido</h2>
+          <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+          <!-- Cart items populated by JavaScript -->
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-value">R$ 0,00</span>
+          </div>
+          <button id="checkout-btn" class="btn btn-primary btn-block">
+            Finalizar via WhatsApp
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <footer id="contato">
+      <div class="footer-content container">
+        <div class="footer-info">
+          <h3>Bistrô Digital</h3>
+          <p>Onde a tradição encontra o paladar contemporâneo.</p>
+          <div class="socials">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Av. Gastronômica, 1000 -
+            Centro
+          </p>
+          <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bistrô Digital. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Overlay for sidebar -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
